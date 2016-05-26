@@ -9,7 +9,7 @@ Morpheus offers to Neo two choices: Neo must choice between red or blue
 pill. His choice have implications that or will make him wake up and he
 can save the World or will simply will make him wake up in your bed and
 not remembering nothing.
-If Neo fails in change the World, Smith will destroy the Matrix.
+If Neo fails to change the World, Smith will destroy the Matrix.
 **************************************************************************/
 {neo,morpheus}O(redPill) - {neo,morpheus}O(bluePill);
 {neo,morpheus}[redPill](
