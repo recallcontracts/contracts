@@ -11,7 +11,11 @@ can save the World or will simply will make him wake up in your bed and
 not remembering nothing.
 If Neo fails to change the World, Smith will destroy the Matrix.
 **************************************************************************/
-{neo,morpheus}O(redPill) - {neo,morpheus}O(bluePill);
+conflict{
+   global{(showTrue,hideTrue), (redPill,bluePill)};
+};
+
+//{neo,morpheus}O(redPill) - {neo,morpheus}O(bluePill);
 {neo,morpheus}[redPill](
    {morpheus,neo}O(showTrue)^
    {morpheus,neo}[showTrue](
@@ -22,8 +26,8 @@ If Neo fails to change the World, Smith will destroy the Matrix.
 );
 {neo,morpheus}[bluePill](
    {morpheus,neo}O(hideTrue&forget)^
-   [1.1*](
-      {neo}O(liveInIgnorance) ^
+   {morpheus,neo}[hideTrue](
+      [1*]({neo}O(liveInIgnorance)) ^
       {smith}O(destroyMatrix)
    )
 );
